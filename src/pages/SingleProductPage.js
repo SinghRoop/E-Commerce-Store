@@ -35,8 +35,8 @@ const SingleProductPage = () => {
   useEffect(() => {
     if (error) {
       setTimeout(() => {
-        history.pushState("/");
-      }, 4000);
+        history.push("/");
+      }, 3000);
     }
   }, [error]);
 

@@ -8,7 +8,7 @@ const Sort = () => {
     filtered_products: products,
     grid_view,
     setGridView,
-    setListView,
+    setListView, 
     sort,
     updateSort,
   } = useFilterContext();

@@ -36,13 +36,20 @@ export const CartProvider = ({ children }) => {
   };
 
   // removeItem
-  const removeItem = (id) => {};
+  const removeItem = (id) => {
+    dispatch({ type: REMOVE_CART_ITEM, payload: id });
+  };
 
   //toggleAmount
-  const toggleAmount = (id, value) => {};
+  const toggleAmount = (id, value) => {
+    console.log(id, value)
+    dispatch({ type: TOGGLE_CART_ITEM_AMOUNT, payload: { id, value } });
+  };
 
   //clearcart
-  const clearCart = () => {};
+  const clearCart = () => {
+    dispatch({ type: CLEAR_CART });
+  };
 
   // Set data to LocalStorage when anything changed in cart
   useEffect(() => {

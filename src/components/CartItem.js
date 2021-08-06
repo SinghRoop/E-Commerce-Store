@@ -11,6 +11,7 @@ const CartItem = ({ id, color, amount, name, image, price }) => {
   const increase = () => {
     toggleAmount(id, 'inc')
   };
+  
   const decrease = () => {
     toggleAmount(id, 'dec')
   };

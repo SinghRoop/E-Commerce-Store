@@ -19,7 +19,7 @@ const CartTotals = () => {
                 </article>
                 <Link to='/checkout' className='btn'>
                     proceed to checkout
-                </Link>
+                </Link> 
             </div>
         </Wrapper>
     )
